@@ -6,6 +6,7 @@ import Login from "./containers/Login";
 import AppliedRoute from "./components/AppliedRoute";
 import Signup from "./containers/Signup";
 import NewNote from "./containers/NewNote";
+import Notes from "./containers/Notes";
 
 export default ({ childProps }) => (
   <Switch>
@@ -16,6 +17,12 @@ export default ({ childProps }) => (
       path="/notes/new"
       exact
       component={NewNote}
+      props={childProps}
+    />
+    <AppliedRoute
+      path="/notes/:id"
+      exact
+      component={Notes}
       props={childProps}
     />
 
