@@ -84,7 +84,7 @@ export default class Signup extends Component {
           <ControlLabel>Confirmation Code</ControlLabel>
           <FormControl
             autoFocus
-            type="tel"
+            type="text"
             value={this.state.confirmationCode}
             onChange={this.handleChange}
           />
